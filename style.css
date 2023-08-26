@@ -89,7 +89,18 @@
    
 }
 @media only screen and (min-width: 314px) {
-
+    #zero{
+        width: 24vh;
+        height: 12vh;
+        border-radius: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        box-sizing: border-box;
+        padding-right: 87px;
+    }
 .cercle:not(#zero){
        
     justify-content: center;
@@ -104,4 +115,32 @@
     font-size: 35px;
   
 }
+}
+@media only screen and (max-width: 263px) {
+    #zero{
+        width: 20vh;
+        height: 9vh;
+        border-radius: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        box-sizing: border-box;
+        padding-right: 87px;
+    }
+    .cercle:not(#zero){
+       
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 9vh;
+        height: 9vh;
+        border-radius: 50%;
+      
+        margin: auto;
+        font-size: 20px;
+      
+    }
 }

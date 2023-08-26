@@ -87,3 +87,20 @@
        
     }
 }
+@media only screen and (min-width: 314px) {
+
+.cercle:not(#zero){
+       
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+  
+    margin: auto;
+    font-size: 35px;
+  
+}
+}

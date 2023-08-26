@@ -4,13 +4,16 @@ let valeur1 = "", valeur2 = "", signe = "";
 
 
 function affectation (valeur) {
- if (valeur1 == "") {
-    valeur1 =  parseInt(valeur);
+ if (signe == "") {
+ 
+    valeur1 = valeur1 + valeur
+     console.log("one" + valeur1)
  }
- else{
-    valeur2 =  parseInt(valeur);;
+ if ((signe != "") && (valeur1 != "") ){
+    valeur2 =  valeur2 + valeur;
+     console.log("two" +valeur2)
  }
- console.log(valeur1 + " " + valeur2)
+
 }
 
 
@@ -19,26 +22,28 @@ function operation(s){
  console.log(signe);
 }
 function resultat () {
+    let valeur1Int = parseInt(valeur1);
+    let valeur2Int = parseInt(valeur2);
     if (valeur2 != "") {
         if (signe == "+") {
-            r.innerHTML = valeur1 + valeur2;
+            r.innerHTML = valeur1Int + valeur2Int;
             
         }
         if (signe == "-") {
-            r.innerHTML = valeur1 - valeur2;
+            r.innerHTML = valeur1Int - valeur2Int;
             
         }
         if (signe == "*") {
-            r.innerHTML = valeur1 * valeur2;
+            r.innerHTML = valeur1Int * valeur2Int;
             
         }
 
         if (signe == "/") {
-            r.innerHTML = valeur1 / valeur2;
+            r.innerHTML = valeur1Int / valeur2Int;
             
         }
         if (signe == "%") {
-            r.innerHTML = valeur1 % valeur2;
+            r.innerHTML = valeur1Int % valeur2Int;
             
         }
         

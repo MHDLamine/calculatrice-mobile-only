@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: none;
+}
+#alert{
+    display: flex;
+    font-size: 20vh;
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: black;
+    }
+    .container{
+        margin-top: 10vh;
+        padding: 0 2vh;
+        display: block;
+    }
+    #alert{
+        display: none;
+    }
+    .cercle:not(#zero){
+       
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 11vh;
+        height: 11vh;
+        border-radius: 50%;
+      
+        margin: auto;
+        font-size: 35px;
+      
+    }
+    #ac, #plusoumoins, #pourcentage{
+        background-color: rgb(196, 196, 196);
+        color: black;
+    }
+    #division, #fois, #moins, #plus, #egale{
+        background-color: orange;
+        color: white;
+    }
+    #zero, #un, #deux, #trois, #quatre, #quatre, #cinq, #six, #sept, #huit, #neuf, #virgule{
+        color: white;
+        background-color: rgb(54, 53, 53);
+    }
+    #fois{
+        padding-top: 15px;
+        box-sizing: border-box;
+    }
+    #zero{
+        width: 24vh;
+        height: 11vh;
+        border-radius: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        box-sizing: border-box;
+        padding-right: 87px;
+    }
+    .resultat{
+        font-size: 5rem;
+        text-align:right;
+        color: white;
+        
+    }
+
+    .box{
+    
+        min-height: 72vh;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .btn{
+        display: flex;
+        flex-wrap: wrap;
+      
+       
+    }
+}

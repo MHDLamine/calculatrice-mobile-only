@@ -56,3 +56,15 @@ function reset() {
     signe = "";
     r.innerHTML = "0"
 }
+function  designer(){
+    if (document.getElementsByClassName("b")[0].style.backgroundColor == "white") {
+        document.getElementsByClassName("b")[0].style.backgroundColor = "black"
+        document.getElementsByClassName("resultat")[0].style.color = "white"
+    }
+    else{
+        document.getElementsByClassName("b")[0].style.backgroundColor = "white"
+        document.getElementsByClassName("resultat")[0].style.color = "black"
+    }
+  
+   
+}
